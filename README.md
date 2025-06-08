@@ -1,2 +1,2 @@
 # Weather-System
-Enter your location to know the weather.
+This is a API based HTML webpage which shows real-time weather of a specific location.
