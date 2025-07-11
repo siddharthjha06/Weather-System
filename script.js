@@ -1,6 +1,6 @@
 function fetchWeather() {
       const city = document.getElementById("cityInput").value;
-      const url = `http://api.weatherapi.com/v1/current.json?key=70e342e9821d48f39de172815253105&q=${city}&aqi=yes`;
+      const url = `https://api.weatherapi.com/v1/current.json?key=70e342e9821d48f39de172815253105&q=${city}&aqi=yes`;
 
       fetch(url)
         .then(res => res.json())
