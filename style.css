@@ -1,0 +1,220 @@
+/* ===== Base ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #e0e8f0;
+}
+
+/* ===== Topbar ===== */
+.topbar {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  padding: 10px 15px;
+  gap: 10px;
+  border-radius: 12px;
+  margin: 15px;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.topbar input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.topbar input::placeholder {
+  color: #cfd8dc;
+}
+
+.topbar button {
+  background: #1e3c72;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+.topbar button:hover {
+  background: #2a5298;
+}
+
+.unit {
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+/* ===== Main Container ===== */
+.container {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 10px;
+}
+
+/* ===== Panels ===== */
+.left-panel, .middle-panel, .right-panel {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+/* left panel */
+.left-panel {
+  flex: 1;
+}
+
+/* middle panel (map + forecast) */
+.middle-panel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+#forecast, #airQualityPanel {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 12px;
+}
+
+/* right panel (ads) */
+.right-panel {
+  flex: 1;
+  text-align: center;
+}
+.ad-space {
+  margin-top: 15px;
+  padding: 20px;
+  border: 2px dashed rgba(255,255,255,0.4);
+  border-radius: 12px;
+  color: #cfd8dc;
+}
+
+/* ===== Weather Info ===== */
+.temp {
+  font-size: 48px;
+  font-weight: bold;
+  color: #90caf9;
+}
+.condition {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #e3f2fd;
+}
+.details p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #cfd8dc;
+}
+
+/* ===== Tabs ===== */
+.bottom-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  justify-content: center;
+  margin-top: auto;
+}
+.bottom-tabs button {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #e3f2fd;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bottom-tabs button:hover {
+  background: #1e3c72;
+  color: white;
+}
+.bottom-tabs button.active {
+  background: #2a5298;
+  color: white;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  color: #bbdefb;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.footer .heart {
+  color: #e57373;
+}
+
+/* ===== Utils ===== */
+.hidden {
+  display: none;
+}
+
+/* right panel (ads) */
+.right-panel {
+  flex: 1;
+  text-align: center;
+}
+
+.ad-space {
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  color: #e0f2f1;
+}
+
+.ad-img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+.ad-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #1e3c72;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.ad-btn:hover {
+  background: #2a5298;
+}
