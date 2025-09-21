@@ -144,3 +144,32 @@ function showAirQuality() {
   `;
   document.getElementById("airQualityPanel").classList.remove("hidden");
 }
+
+  // Disable right click
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+      alert("Right-click is disabled!");
+    });
+
+    // Disable inspect-related keys
+    document.addEventListener("keydown", function (e) {
+      // F12
+      if (e.key === "F12") {
+        e.preventDefault();
+      }
+
+      // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) {
+        e.preventDefault();
+      }
+
+      // Ctrl+U (View Source)
+      if (e.ctrlKey && e.key === "U") {
+        e.preventDefault();
+      }
+
+      // Ctrl+S (Save Page)
+      if (e.ctrlKey && e.key === "S") {
+        e.preventDefault();
+      }
+    });
