@@ -144,8 +144,7 @@ function showAirQuality() {
   `;
   document.getElementById("airQualityPanel").classList.remove("hidden");
 }
-
-  // Disable right click
+// Disable right click
     document.addEventListener("contextmenu", function (e) {
       e.preventDefault();
       alert("Right-click is disabled!");
@@ -173,3 +172,4 @@ function showAirQuality() {
         e.preventDefault();
       }
     });
+
